@@ -1,4 +1,4 @@
-module github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring
+module github.com/minicali/prometheus-operator/pkg/apis/monitoring
 
 go 1.23.0
 

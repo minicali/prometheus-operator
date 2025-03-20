@@ -1,11 +1,11 @@
-module github.com/prometheus-operator/prometheus-operator/pkg/client
+module github.com/minicali/prometheus-operator/pkg/client
 
 go 1.23.0
 
 toolchain go1.23.1
 
 require (
-	github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring v0.81.0
+	github.com/minicali/prometheus-operator/pkg/apis/monitoring v0.81.0-exported
 	k8s.io/api v0.32.2
 	k8s.io/apiextensions-apiserver v0.32.2
 	k8s.io/apimachinery v0.32.2
@@ -53,4 +53,4 @@ require (
 	sigs.k8s.io/yaml v1.4.0 // indirect
 )
 
-replace github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring => ../apis/monitoring
+replace github.com/minicali/prometheus-operator/pkg/apis/monitoring => ../apis/monitoring
