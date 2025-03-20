@@ -1,4 +1,4 @@
-module github.com/prometheus-operator/prometheus-operator
+module github.com/minicali/prometheus-operator
 
 go 1.23.0
 
@@ -21,8 +21,8 @@ require (
 	github.com/mitchellh/hashstructure v1.1.0
 	github.com/oklog/run v1.1.0
 	github.com/prometheus-community/prom-label-proxy v0.11.0
-	github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring v0.81.0
-	github.com/prometheus-operator/prometheus-operator/pkg/client v0.81.0
+	github.com/minicali/prometheus-operator/pkg/apis/monitoring v0.81.0-exported
+	github.com/minicali/prometheus-operator/pkg/client v0.81.0-exported
 	github.com/prometheus/alertmanager v0.28.1
 	github.com/prometheus/client_golang v1.20.5
 	github.com/prometheus/common v0.61.0
@@ -142,6 +142,6 @@ require (
 )
 
 replace (
-	github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring => ./pkg/apis/monitoring
-	github.com/prometheus-operator/prometheus-operator/pkg/client => ./pkg/client
+	github.com/minicali/prometheus-operator/pkg/apis/monitoring => ./pkg/apis/monitoring
+	github.com/minicali/prometheus-operator/pkg/client => ./pkg/client
 )
